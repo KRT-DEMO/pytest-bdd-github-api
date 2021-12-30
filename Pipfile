@@ -11,6 +11,7 @@ pytest-html = "==3.1.1"
 approvaltests = "==3.3.2"
 pytest-approvaltests = "==0.2.3"
 pytest-bdd = "==5.0.0"
+faker = "==11.1.0"
 
 [dev-packages]
 

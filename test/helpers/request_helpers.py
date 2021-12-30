@@ -42,7 +42,14 @@ def get(url, headers=None, auth=None, params=None, cookies=None):
 
 def head(url, headers=None, auth=None, cookies=None):
 
-    response = requests.get(url, headers=headers, auth=auth, cookies=cookies)
+    response = requests.head(url, headers=headers, auth=auth, cookies=cookies)
+
+    return response
+
+
+def options(url, headers=None, auth=None, cookies=None):
+
+    response = requests.options(url, headers=headers, auth=auth, cookies=cookies)
 
     return response
 

@@ -5,14 +5,14 @@ USER = '/user'
 USER_REPOS = '/user/repos'
 REPOS = '/repos'
 OWNER = '/KTJ-DEMO'
-TOKEN = ''
+TOKEN = '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'
 HEADER = {"accept": "application/vnd.github.v3+json"}
 AUTH = ('Authorization', TOKEN)
 
 # Enable tests to run across multiple environments
 
 def pytest_addoption(parser):
-    parser.addoption("--environment", action="store", default="test", help="environment to run the api tests against")
+    parser.addoption("--environment", action="store", default="prod", help="environment to run the api tests against")
 
 @pytest.fixture
 def urls(pytestconfig):
@@ -20,17 +20,17 @@ def urls(pytestconfig):
 
     if env == 'dev':
         urls = {
-            "githubBaseURL": "https://api.github.com"
+            "githubBaseURL": "https://dev.api.github.com"
         }
         return urls
     elif env == 'test':
         urls = {
-            "githubBaseURL": "https://api.github.com"
+            "githubBaseURL": "https://test.api.github.com"
         }
         return urls
     elif env == 'stage':
         urls = {
-            "githubBaseURL": "https://api.github.com"
+            "githubBaseURL": "https://stage.api.github.com"
         }
         return urls
     elif env == 'prod':

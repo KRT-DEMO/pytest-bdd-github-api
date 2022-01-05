@@ -7,13 +7,6 @@ from test.helpers import request_helpers
 
 scenarios('../features/github_repos_api.feature')
 
-# @scenario(
-#     "../features/github_repos_api.feature",
-#     "Create a new Repo using a Data Table"
-# )
-# def test_outlined():
-#     pass
-
 # Given
 
 @given('the user executes a GET User call', target_fixture="get_user")

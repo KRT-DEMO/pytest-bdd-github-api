@@ -14,9 +14,10 @@ Scenario: GET Call returns 200
 
 @smoke
 Scenario Outline: Create a new Repo using a Data Table
-    Given the user creates a new repo with a <name>, <description>, <homepage>, <is_private>
+    Given the user creates a new repo with a <description>, <homepage>, <is_private>
     Then the repo is created
 
     Examples:
-    | name        | description | homepage       | is_private |
-    | random_name | description | www.google.com | False      |
+
+    | description      | homepage       | is_private |
+    | some description | www.google.com | False      |

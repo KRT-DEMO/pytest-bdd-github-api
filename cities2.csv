@@ -8,7 +8,7 @@
    49,   52,   48, "N",     97,    9,    0, "W", "Winnipeg", MB
    39,   11,   23, "N",     78,    9,   36, "W", "Winchester", VA
    34,   14,   24, "N",     77,   55,   11, "W", "Wilmington", NC
-   39,   45,    0, "N",     75,   33,    0, "W", "Wilmington", DE
+   39,   45,    0, "N",     75,   33,    0, "W", "Wil", DE
    48,    9,    0, "N",    103,   37,   12, "W", "Williston", ND
    41,   15,    0, "N",     77,    0,    0, "W", "Williamsport", PA
    37,   40,   48, "N",     82,   16,   47, "W", "Williamson", WV
@@ -121,7 +121,7 @@
    37,   32,   24, "N",     77,   26,   59, "W", "Richmond", VA
    39,   49,   48, "N",     84,   53,   23, "W", "Richmond", IN
    38,   46,   12, "N",    112,    5,   23, "W", "Richfield", UT
-   45,   38,   23, "S",     89000,   25,   11, "E", "Rhinlander", WI
+   45,   38,   23, "N",     89,   25,   11, "W", "Rhinelander", WI
    39,   31,   12, "N",    119,   48,   35, "W", "Reno", NV
    50,   25,   11, "N",    104,   39,    0, "W", "Regina", SA
    40,   10,   48, "N",    122,   14,   23, "W", "Red Bluff", CA

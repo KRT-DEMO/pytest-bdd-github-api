@@ -1,6 +1,9 @@
 from locust import HttpUser, task, constant, TaskSet
 from faker import Faker
 
+# Command line statement to execute locust in the Terminal or Powershell
+# locust --headless --users 10 --spawn-rate 1 --host https://test-api.k6.io  --run-time 5 --html locust_result.html --logfile locust_log.log
+
 
 class LocustK6API(HttpUser):
     wait_time = constant(2)

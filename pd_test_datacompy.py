@@ -27,12 +27,14 @@ def test_datacompy_excel_to_csv():
     df1 = pd.read_excel('OrderInfo.xlsx', dtype=str)
     df2 = pd.read_csv('OrderInfo.csv', dtype=str)
 
+
+    #change order date column data format to the same format
     df1["OrderDate"] = df1["OrderDate"].apply(
         lambda x: datetime.datetime.strptime(x, "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d"))
     df2["OrderDate"] = df2["OrderDate"].apply(
         lambda x: datetime.datetime.strptime(x, "%m/%d/%Y").strftime("%Y-%m-%d"))
 
-    # Trim commas from values
+    # Trim commas from Total values.
     df2["Total"] = df2["Total"].apply(
         lambda x: x.replace(',', ''))
 
